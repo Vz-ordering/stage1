@@ -1,0 +1,13 @@
+import discount.CalcDiscount;
+import discount.CalcDiscountService;
+
+
+public class MyClient {
+public static void main(String[] args) {
+
+	CalcDiscountService cd =new CalcDiscountService();
+	CalcDiscount c = cd.getCalcDiscountPort();
+	
+	System.out.println(c.disc(34000));
+}
+}
